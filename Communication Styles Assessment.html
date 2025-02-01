@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Communication Styles Assessment&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body { font-family: Arial, sans-serif; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container { max-width: 700px; margin: auto; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.question { margin: 10px 0; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.style-score { font-weight: bold; margin-top: 10px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function calculateScore() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let styles = { Pragmatist: 0, Investor: 0, Humanitarian: 0, Philosopher: 0 };</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let pragmatist = [1, 8, 9, 13, 17, 24, 26, 31, 33, 40, 41, 48, 50, 53, 57, 63, 65, 70, 74, 79];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let investor = [2, 7, 10, 14, 18, 23, 25, 30, 34, 37, 42, 47, 51, 55, 58, 62, 66, 69, 75, 78];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let humanitarian = [3, 6, 11, 15, 19, 22, 27, 29, 35, 38, 43, 46, 49, 56, 59, 64, 67, 71, 76, 80];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let philosopher = [4, 5, 12, 16, 20, 21, 28, 32, 36, 39, 44, 45, 52, 54, 60, 61, 68, 72, 73, 77];</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('input[type=checkbox]:checked').forEach((checkbox) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>let num = parseInt(checkbox.value);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (pragmatist.includes(num)) styles.Pragmatist++;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (investor.includes(num)) styles.Investor++;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (humanitarian.includes(num)) styles.Humanitarian++;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (philosopher.includes(num)) styles.Philosopher++;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('pragmatist-score').innerText = styles.Pragmatist;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('investor-score').innerText = styles.Investor;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('humanitarian-score').innerText = styles.Humanitarian;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('philosopher-score').innerText = styles.Philosopher;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Communication Styles Assessment&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Select the statements that best represent you.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="questions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>let questions = [</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I like action", "I deal with problems in a systematic way",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I believe that teams are more effective than individuals", "I enjoy innovation very much",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I am more interested in the future than in the past", "I enjoy working with people",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I like to attend well-organized group meetings", "Deadlines are important to me",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I cannot stand procrastination", "I believe that new ideas have to be tested before being used",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I enjoy the stimulation of interaction with others", "I am always looking for new possibilities",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I want to set up my own objectives", "When I start something, I go through until the end",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I basically try to understand other people’s emotions", "I do challenge people around me",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I look forward to receiving feedback on my performance", "I find the step-by-step approach very effective",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I think I am good at reading people", "I like creative problem solving",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I extrapolate and project all the time", "I am sensitive to others’ needs",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"Planning is the key to success", "I become impatient with long deliberations",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I am cool under pressure", "I value experience very much",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I listen to people", "People say that I am a fast thinker",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"Cooperation is a key word for me", "I use logical methods to test alternatives",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I like to handle several projects at the same time", "I always question myself",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I learn by doing", "I believe that my head rules my heart",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I can predict how others may react to a certain action", "I do not like details",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"Analysis should always precede action", "I am able to assess the climate of a group",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I have a tendency to start things and not finish them up", "I perceive myself as decisive",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I search for challenging tasks", "I rely on observation and data",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I can express my feelings openly", "I like to design new projects",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I enjoy reading very much", "I perceive myself as a facilitator",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I like to focus on one issue at a time", "I like to achieve",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I enjoy learning about others", "I like variety",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"Facts speak for themselves", "I use my imagination as much as possible",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"I am impatient with long slow assignments", "My mind never stops working",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>"Key decisions have to be made in a cautious way", "I strongly believe that people need each other to get work done"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>];</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>for (let i = 0; i &lt; questions.length; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>document.write(`&lt;div class='question'&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;input type='checkbox' value='${i + 1}' onchange='calculateScore()'&gt; ${questions[i]}</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;`);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="style-score"&gt;Pragmatist Score: &lt;span id="pragmatist-score"&gt;0&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="style-score"&gt;Investor Score: &lt;span id="investor-score"&gt;0&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="style-score"&gt;Humanitarian Score: &lt;span id="humanitarian-score"&gt;0&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="style-score"&gt;Philosopher Score: &lt;span id="philosopher-score"&gt;0&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
