@@ -2,7 +2,7 @@
 
 A professional, interactive web-based assessment tool to help individuals discover their predominant communication style.
 
-## 🌟 Live Demo
+## 🌟 Take the Assessment
 
 **[Take the Assessment](https://jjp-pcllc.github.io/communication-assessment/index.html)**
 
@@ -24,6 +24,23 @@ This assessment helps professionals understand their natural communication prefe
 - ✅ **Print-ready results** - Built-in print functionality
 - ✅ **No backend required** - Pure client-side application
 - ✅ **Privacy-focused** - No data collection or storage
+
+## 🚀 Quick Start
+
+### Option 1: Use It Online
+Simply visit the live demo link above and start the assessment immediately.
+
+
+## 📱 Option 2: QR Code Access
+
+Generate a QR code for easy mobile access:
+
+**Quick QR Code:**
+```
+https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://jjp-pcllc.github.io/communication-assessment/index.html
+```
+
+[Click here to view QR code](https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://jjp-pcllc.github.io/communication-assessment/index.html)
 
 
 ## 📖 How It Works
@@ -58,10 +75,6 @@ Each communication style is scored on a scale of 0-20:
 - **No login required** - Instant access for all users
 
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## 🙏 Acknowledgments
 
 - Assessment methodology based on established communication style research
@@ -71,20 +84,11 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📧 Contact
 
 For questions, suggestions, or support:
-- Open an issue in this repository
-- Contact: info@productiveconflict.us
+info@productiveconflict.us
 
-## 🔗 Links
 
-- [Take the Assessment](https://jjp-pcllc.github.io/communication-assessment/index.html)
+---
 
-## 📈 Roadmap
+**Made with ❤️ for better communication**
 
-Future enhancements may include:
-- [ ] Multi-language support
-- [ ] PDF export of results
-- [ ] Email results functionality
-- [ ] Team comparison features
-- [ ] Admin dashboard for organizations
-- [ ] API for result storage (optional)
-
+⭐ Star this repo if you find it useful!
